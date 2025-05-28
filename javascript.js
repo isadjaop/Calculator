@@ -1,3 +1,4 @@
+//Copyright atas nama Dhonan Rachma Dio Putra_2040241086_A
 let layarKalkulator = document.getElementById('layarKalkulator');
 let daftarRiwayat = document.getElementById('daftarRiwayat');
 let pesanKosong = document.getElementById('pesanKosong');
@@ -157,3 +158,7 @@ window.addEventListener('load', muatRiwayatDariStorage);
 window.addEventListener('load', function() {
     layarKalkulator.focus();
 });
+
+//Copyright atas nama Dhonan Rachma Dio Putra_2040241086_A
+//Diharap dengan kesadaran penuh "saya tidak merubah atau mengambil apapun dari file ini dan hanya berniat mengambil contoh sebagai referensi disini :)"
+// Mohon dimengerti ya (*v*)
