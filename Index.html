@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wadah-utama">
+        <div class="kontainer-kalkulator">
+            <input type="text" class="layar-kalkulator" id="layarKalkulator" readonly placeholder="0">
+
+            <div class="grid-tombol">
+                <button class="tombol tombol-clear" onclick="hapusLayar()">CLEAR</button>
+                <button class="tombol tombol-operator" onclick="hapusKarakterTerakhir()">⌫</button>
+                <button class="tombol tombol-operator" onclick="tambahKeLayar('+')">+</button>
+                <button class="tombol tombol-angka" onclick="tambahKeLayar('1')">1</button>
+                <button class="tombol tombol-angka" onclick="tambahKeLayar('2')">2</button>
+                <button class="tombol tombol-angka" onclick="tambahKeLayar('3')">3</button>
+                <button class="tombol tombol-operator" onclick="tambahKeLayar('/')">/</button>
+                <button class="tombol tombol-angka" onclick="tambahKeLayar('4')">4</button>
+                <button class="tombol tombol-angka" onclick="tambahKeLayar('5')">5</button>
+                <button class="tombol tombol-angka" onclick="tambahKeLayar('6')">6</button>
+                <button class="tombol tombol-operator" onclick="tambahKeLayar('*')">×</button>
+                <button class="tombol tombol-angka" onclick="tambahKeLayar('7')">7</button>
+                <button class="tombol tombol-angka" onclick="tambahKeLayar('8')">8</button>
+                <button class="tombol tombol-angka" onclick="tambahKeLayar('9')">9</button>
+                <button class="tombol tombol-operator" onclick="tambahKeLayar('-')">-</button>
+                <button class="tombol tombol-angka" onclick="tambahKeLayar('0')">0</button>
+                <button class="tombol tombol-angka" onclick="tambahKeLayar('.')">.</button>
+                <button class="tombol kosong" onclick="tidakada('')"></button>
+                <button class="tombol tombol-operator" onclick="hitungPersentase()">%</button>
+                <button class="tombol tombol-sama-dengan" onclick="hitungHasil()">=</button>
+            </div>
+        </div>
+
+        <div class="kontainer-riwayat">
+            <h2 class="judul-riwayat">RIWAYAT PERHITUNGAN</h2>
+            <button class="tombol-hapus-semua" onclick="hapusSemuaRiwayat()">HAPUS SEMUA RIWAYAT</button>
+            <ul class="daftar-riwayat" id="daftarRiwayat">
+                <li class="pesan-kosong" id="pesanKosong">Belum ada perhitungan yang dilakukan</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="javascript.js"></script>
+</body>
+
+</html>
